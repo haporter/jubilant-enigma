@@ -6,8 +6,9 @@
 //
 
 import Foundation
+import SwiftData
 
-enum Affiliation: String {
+enum Affiliation: String, Decodable {
     case jedi = "JEDI"
     case resistance = "RESISTANCE"
     case firstOrder = "FIRST_ORDER"
