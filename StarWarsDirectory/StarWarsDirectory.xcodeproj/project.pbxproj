@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2C21B42D2A5E523E0057211D /* Individual.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C21B42C2A5E523E0057211D /* Individual.swift */; };
+		2C21B42F2A5E53A50057211D /* Affiliation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C21B42E2A5E53A50057211D /* Affiliation.swift */; };
 		2C4BE8002A5E09BE0088864B /* StarWarsDirectoryApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C4BE7FF2A5E09BE0088864B /* StarWarsDirectoryApp.swift */; };
 		2C4BE8022A5E09BE0088864B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C4BE8012A5E09BE0088864B /* ContentView.swift */; };
 		2C4BE8042A5E09C10088864B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C4BE8032A5E09C10088864B /* Assets.xcassets */; };
@@ -34,6 +36,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2C21B42C2A5E523E0057211D /* Individual.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Individual.swift; sourceTree = "<group>"; };
+		2C21B42E2A5E53A50057211D /* Affiliation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Affiliation.swift; sourceTree = "<group>"; };
 		2C4BE7FC2A5E09BE0088864B /* StarWarsDirectory.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StarWarsDirectory.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C4BE7FF2A5E09BE0088864B /* StarWarsDirectoryApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarWarsDirectoryApp.swift; sourceTree = "<group>"; };
 		2C4BE8012A5E09BE0088864B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -96,6 +100,8 @@
 			children = (
 				2C4BE7FF2A5E09BE0088864B /* StarWarsDirectoryApp.swift */,
 				2C4BE8012A5E09BE0088864B /* ContentView.swift */,
+				2C21B42C2A5E523E0057211D /* Individual.swift */,
+				2C21B42E2A5E53A50057211D /* Affiliation.swift */,
 				2C4BE8032A5E09C10088864B /* Assets.xcassets */,
 				2C4BE8052A5E09C10088864B /* Preview Content */,
 			);
@@ -258,6 +264,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				2C4BE8022A5E09BE0088864B /* ContentView.swift in Sources */,
+				2C21B42D2A5E523E0057211D /* Individual.swift in Sources */,
+				2C21B42F2A5E53A50057211D /* Affiliation.swift in Sources */,
 				2C4BE8002A5E09BE0088864B /* StarWarsDirectoryApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
