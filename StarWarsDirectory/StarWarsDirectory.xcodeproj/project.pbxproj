@@ -23,11 +23,8 @@
 		2C4BE81D2A5E09C10088864B /* StarWarsDirectoryUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C4BE81C2A5E09C10088864B /* StarWarsDirectoryUITests.swift */; };
 		2C4BE81F2A5E09C10088864B /* StarWarsDirectoryUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C4BE81E2A5E09C10088864B /* StarWarsDirectoryUITestsLaunchTests.swift */; };
 		2CADB3852A5F61A20077E41C /* DirectoryListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CADB3842A5F61A20077E41C /* DirectoryListView.swift */; };
-		2CADB3872A5F63EC0077E41C /* Individual+Dummy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CADB3862A5F63EC0077E41C /* Individual+Dummy.swift */; };
-		2CADB3892A5F644E0077E41C /* PreviewDummyData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CADB3882A5F644E0077E41C /* PreviewDummyData.swift */; };
 		2CADB38B2A5F68D70077E41C /* IndividualCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CADB38A2A5F68D70077E41C /* IndividualCellView.swift */; };
 		2CADB38D2A5FA5D70077E41C /* IndividualDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CADB38C2A5FA5D70077E41C /* IndividualDetailView.swift */; };
-		2CADB38F2A5FAC260077E41C /* DetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CADB38E2A5FAC260077E41C /* DetailViewModel.swift */; };
 		2CADB3912A5FC0B60077E41C /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CADB3902A5FC0B60077E41C /* LoadingView.swift */; };
 		2CD735D72A5FD50800B2817C /* Logger+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CD735D62A5FD50800B2817C /* Logger+Extension.swift */; };
 		2CD735D92A608DDC00B2817C /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2CD735D82A608DDC00B2817C /* Colors.xcassets */; };
@@ -72,11 +69,8 @@
 		2C4BE81C2A5E09C10088864B /* StarWarsDirectoryUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarWarsDirectoryUITests.swift; sourceTree = "<group>"; };
 		2C4BE81E2A5E09C10088864B /* StarWarsDirectoryUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarWarsDirectoryUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		2CADB3842A5F61A20077E41C /* DirectoryListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DirectoryListView.swift; sourceTree = "<group>"; };
-		2CADB3862A5F63EC0077E41C /* Individual+Dummy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Individual+Dummy.swift"; sourceTree = "<group>"; };
-		2CADB3882A5F644E0077E41C /* PreviewDummyData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewDummyData.swift; sourceTree = "<group>"; };
 		2CADB38A2A5F68D70077E41C /* IndividualCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndividualCellView.swift; sourceTree = "<group>"; };
 		2CADB38C2A5FA5D70077E41C /* IndividualDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndividualDetailView.swift; sourceTree = "<group>"; };
-		2CADB38E2A5FAC260077E41C /* DetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewModel.swift; sourceTree = "<group>"; };
 		2CADB3902A5FC0B60077E41C /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 		2CD735D62A5FD50800B2817C /* Logger+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Logger+Extension.swift"; sourceTree = "<group>"; };
 		2CD735D82A608DDC00B2817C /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
@@ -147,15 +141,12 @@
 				2CADB3842A5F61A20077E41C /* DirectoryListView.swift */,
 				2CADB38C2A5FA5D70077E41C /* IndividualDetailView.swift */,
 				2CADB3902A5FC0B60077E41C /* LoadingView.swift */,
-				2CADB38E2A5FAC260077E41C /* DetailViewModel.swift */,
 				2C21B4372A5E5DEA0057211D /* DirectoryViewModel.swift */,
 				2CD735D62A5FD50800B2817C /* Logger+Extension.swift */,
 				2C21B4392A5E5F080057211D /* IndividualJSONDecoder.swift */,
 				2C21B4312A5E58F40057211D /* Network.swift */,
 				2C21B4332A5E5A920057211D /* DirectoryService.swift */,
 				2C21B43B2A5F14FB0057211D /* Individual.swift */,
-				2CADB3862A5F63EC0077E41C /* Individual+Dummy.swift */,
-				2CADB3882A5F644E0077E41C /* PreviewDummyData.swift */,
 				2CADB38A2A5F68D70077E41C /* IndividualCellView.swift */,
 				2C21B4302A5E54AA0057211D /* Model */,
 				2C4BE8032A5E09C10088864B /* Assets.xcassets */,
@@ -331,7 +322,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				2C21B4322A5E58F40057211D /* Network.swift in Sources */,
-				2CADB3872A5F63EC0077E41C /* Individual+Dummy.swift in Sources */,
 				2C4BE8022A5E09BE0088864B /* ContentView.swift in Sources */,
 				2CADB38B2A5F68D70077E41C /* IndividualCellView.swift in Sources */,
 				2CADB3912A5FC0B60077E41C /* LoadingView.swift in Sources */,
@@ -342,12 +332,10 @@
 				2CADB3852A5F61A20077E41C /* DirectoryListView.swift in Sources */,
 				2C21B4382A5E5DEA0057211D /* DirectoryViewModel.swift in Sources */,
 				2C21B42F2A5E53A50057211D /* Affiliation.swift in Sources */,
-				2CADB3892A5F644E0077E41C /* PreviewDummyData.swift in Sources */,
 				2CD735D72A5FD50800B2817C /* Logger+Extension.swift in Sources */,
 				2C21B4362A5E5CC20057211D /* IndividualsDTO.swift in Sources */,
 				2C4BE8002A5E09BE0088864B /* StarWarsDirectoryApp.swift in Sources */,
 				2C21B43A2A5E5F080057211D /* IndividualJSONDecoder.swift in Sources */,
-				2CADB38F2A5FAC260077E41C /* DetailViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
