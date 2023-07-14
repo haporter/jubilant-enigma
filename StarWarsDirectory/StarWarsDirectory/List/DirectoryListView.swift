@@ -74,7 +74,7 @@ struct DirectoryListView: View {
                 } label: { }
             } label: {
                 Text("Sort")
-                    .foregroundStyle(.black)
+                    .foregroundStyle(Color.primary)
             }
         }
     }
