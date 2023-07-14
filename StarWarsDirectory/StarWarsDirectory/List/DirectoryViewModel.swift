@@ -26,7 +26,7 @@ class DirectoryViewModel {
     }
     
     func fetch(forceRefresh: Bool = false) {
-        var individuals = (try? modelContext.fetch(FetchDescriptor<Individual>())) ?? []
+        let individuals = (try? modelContext.fetch(FetchDescriptor<Individual>())) ?? []
         guard forceRefresh || individuals.isEmpty else { return }
         
         DirectoryService().fetchIndividuals()

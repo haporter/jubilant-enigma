@@ -7,15 +7,27 @@
 
 import SwiftUI
 import SwiftData
+import Combine
 
 struct ContentView: View {
     @Environment(\.modelContext) private var modelContext
     
+    @State private var isLoading: Bool = true
+    
     var body: some View {
-        Text("HELLO WORLD")
+        if isLoading {
+            LoadingView()
+                .contentTransition(.opacity)
+                .onAppear {
+                    DispatchQueue.main.asyncAfter(deadline: .now() + 4.5) {
+                        withAnimation {
+                            isLoading.toggle()
+                        }
+                    }
+                }
+        } else {
+            DirectoryListView(viewModel: .init(modelContext: modelContext))
+                .contentTransition(.opacity)
+        }
     }
-}
-
-#Preview {
-    ContentView()
 }

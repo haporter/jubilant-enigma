@@ -14,9 +14,22 @@ enum Route: Hashable {
 
 struct DirectoryListView: View {
     
+    @State var sort: SortType = .firstName
     @State var route: [Route] = []
-    @Query(sort: \.firstName, order: .forward) private var individuals: [Individual]
+    @Query(sort: \.firstName, order: .forward) private var firstNameIndividuals: [Individual]
+    @Query(sort: \._affiliation) private var affiliationIndividuals: [Individual]
     var viewModel: DirectoryViewModel
+    
+    var individuals: [Individual] {
+        let value: [Individual]
+        switch sort {
+        case .firstName:
+            value = firstNameIndividuals
+        case .affiliation:
+            value = affiliationIndividuals
+        }
+        return value
+    }
     
     init(viewModel: DirectoryViewModel) {
         self.viewModel = viewModel
@@ -45,8 +58,40 @@ struct DirectoryListView: View {
                 }
             }
             .navigationTitle("Directory")
+            .toolbar(content: navBar)
         }
         .tint(.white)
     }
+    
+    @ToolbarContentBuilder
+    func navBar() -> some ToolbarContent {
+        ToolbarItem(placement: .topBarTrailing) {
+            Menu {
+                Picker(selection: $sort) {
+                    ForEach(SortType.allCases, id: \.self) { index in
+                        Text(index.name)
+                    }
+                } label: { }
+            } label: {
+                Text("Sort")
+                    .foregroundStyle(.black)
+            }
+        }
+    }
 }
 
+extension DirectoryListView {
+    enum SortType: Int, CaseIterable {
+        case firstName
+        case affiliation
+        
+        var name: String {
+            switch self {
+            case .firstName:
+                return "Name"
+            case .affiliation:
+                return "Affiliation"
+            }
+        }
+    }
+}
