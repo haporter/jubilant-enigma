@@ -11,7 +11,6 @@
 		2C21B42F2A5E53A50057211D /* Affiliation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C21B42E2A5E53A50057211D /* Affiliation.swift */; };
 		2C21B4322A5E58F40057211D /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C21B4312A5E58F40057211D /* Network.swift */; };
 		2C21B4342A5E5A920057211D /* DirectoryService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C21B4332A5E5A920057211D /* DirectoryService.swift */; };
-		2C21B4362A5E5CC20057211D /* IndividualsDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C21B4352A5E5CC20057211D /* IndividualsDTO.swift */; };
 		2C21B4382A5E5DEA0057211D /* DirectoryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C21B4372A5E5DEA0057211D /* DirectoryViewModel.swift */; };
 		2C21B43A2A5E5F080057211D /* IndividualJSONDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C21B4392A5E5F080057211D /* IndividualJSONDecoder.swift */; };
 		2C21B43C2A5F14FB0057211D /* Individual.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C21B43B2A5F14FB0057211D /* Individual.swift */; };
@@ -54,7 +53,6 @@
 		2C21B42E2A5E53A50057211D /* Affiliation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Affiliation.swift; sourceTree = "<group>"; };
 		2C21B4312A5E58F40057211D /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
 		2C21B4332A5E5A920057211D /* DirectoryService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DirectoryService.swift; sourceTree = "<group>"; };
-		2C21B4352A5E5CC20057211D /* IndividualsDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndividualsDTO.swift; sourceTree = "<group>"; };
 		2C21B4372A5E5DEA0057211D /* DirectoryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DirectoryViewModel.swift; sourceTree = "<group>"; };
 		2C21B4392A5E5F080057211D /* IndividualJSONDecoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndividualJSONDecoder.swift; sourceTree = "<group>"; };
 		2C21B43B2A5F14FB0057211D /* Individual.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Individual.swift; sourceTree = "<group>"; };
@@ -106,8 +104,8 @@
 		2C21B4302A5E54AA0057211D /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				2C21B43B2A5F14FB0057211D /* Individual.swift */,
 				2C21B42C2A5E523E0057211D /* IndividualDTO.swift */,
-				2C21B4352A5E5CC20057211D /* IndividualsDTO.swift */,
 				2C21B42E2A5E53A50057211D /* Affiliation.swift */,
 			);
 			path = Model;
@@ -146,7 +144,6 @@
 				2C21B4392A5E5F080057211D /* IndividualJSONDecoder.swift */,
 				2C21B4312A5E58F40057211D /* Network.swift */,
 				2C21B4332A5E5A920057211D /* DirectoryService.swift */,
-				2C21B43B2A5F14FB0057211D /* Individual.swift */,
 				2CADB38A2A5F68D70077E41C /* IndividualCellView.swift */,
 				2C21B4302A5E54AA0057211D /* Model */,
 				2C4BE8032A5E09C10088864B /* Assets.xcassets */,
@@ -333,7 +330,6 @@
 				2C21B4382A5E5DEA0057211D /* DirectoryViewModel.swift in Sources */,
 				2C21B42F2A5E53A50057211D /* Affiliation.swift in Sources */,
 				2CD735D72A5FD50800B2817C /* Logger+Extension.swift in Sources */,
-				2C21B4362A5E5CC20057211D /* IndividualsDTO.swift in Sources */,
 				2C4BE8002A5E09BE0088864B /* StarWarsDirectoryApp.swift in Sources */,
 				2C21B43A2A5E5F080057211D /* IndividualJSONDecoder.swift in Sources */,
 			);
