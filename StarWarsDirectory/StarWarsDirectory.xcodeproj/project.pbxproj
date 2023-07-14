@@ -24,10 +24,10 @@
 		2CADB3852A5F61A20077E41C /* DirectoryListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CADB3842A5F61A20077E41C /* DirectoryListView.swift */; };
 		2CADB38B2A5F68D70077E41C /* IndividualCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CADB38A2A5F68D70077E41C /* IndividualCellView.swift */; };
 		2CADB38D2A5FA5D70077E41C /* IndividualDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CADB38C2A5FA5D70077E41C /* IndividualDetailView.swift */; };
-		2CADB3912A5FC0B60077E41C /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CADB3902A5FC0B60077E41C /* LoadingView.swift */; };
 		2CD735D72A5FD50800B2817C /* Logger+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CD735D62A5FD50800B2817C /* Logger+Extension.swift */; };
 		2CD735D92A608DDC00B2817C /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2CD735D82A608DDC00B2817C /* Colors.xcassets */; };
 		2CD735DF2A609DF700B2817C /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 2CD735DE2A609DF700B2817C /* Localizable.xcstrings */; };
+		2CD735E62A60C14A00B2817C /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CD735E52A60C14A00B2817C /* LoadingView.swift */; };
 		2CFF74372A5F4C5900D1AEB9 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 2CFF74362A5F4C5900D1AEB9 /* Kingfisher */; };
 /* End PBXBuildFile section */
 
@@ -69,10 +69,10 @@
 		2CADB3842A5F61A20077E41C /* DirectoryListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DirectoryListView.swift; sourceTree = "<group>"; };
 		2CADB38A2A5F68D70077E41C /* IndividualCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndividualCellView.swift; sourceTree = "<group>"; };
 		2CADB38C2A5FA5D70077E41C /* IndividualDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndividualDetailView.swift; sourceTree = "<group>"; };
-		2CADB3902A5FC0B60077E41C /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 		2CD735D62A5FD50800B2817C /* Logger+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Logger+Extension.swift"; sourceTree = "<group>"; };
 		2CD735D82A608DDC00B2817C /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		2CD735DE2A609DF700B2817C /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
+		2CD735E52A60C14A00B2817C /* LoadingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,16 +136,13 @@
 			children = (
 				2C4BE7FF2A5E09BE0088864B /* StarWarsDirectoryApp.swift */,
 				2C4BE8012A5E09BE0088864B /* ContentView.swift */,
-				2CADB3842A5F61A20077E41C /* DirectoryListView.swift */,
-				2CADB38C2A5FA5D70077E41C /* IndividualDetailView.swift */,
-				2CADB3902A5FC0B60077E41C /* LoadingView.swift */,
-				2C21B4372A5E5DEA0057211D /* DirectoryViewModel.swift */,
-				2CD735D62A5FD50800B2817C /* Logger+Extension.swift */,
-				2C21B4392A5E5F080057211D /* IndividualJSONDecoder.swift */,
-				2C21B4312A5E58F40057211D /* Network.swift */,
-				2C21B4332A5E5A920057211D /* DirectoryService.swift */,
-				2CADB38A2A5F68D70077E41C /* IndividualCellView.swift */,
+				2CD735E02A60BF8900B2817C /* List */,
+				2CD735E72A61B45D00B2817C /* Detail */,
+				2CD735E42A60C0B200B2817C /* Components */,
+				2CD735E12A60BFC000B2817C /* Networking */,
+				2CD735E22A60BFC900B2817C /* Service Layer */,
 				2C21B4302A5E54AA0057211D /* Model */,
+				2CD735E32A60BFDB00B2817C /* Extensions */,
 				2C4BE8032A5E09C10088864B /* Assets.xcassets */,
 				2CD735DE2A609DF700B2817C /* Localizable.xcstrings */,
 				2CD735D82A608DDC00B2817C /* Colors.xcassets */,
@@ -177,6 +174,57 @@
 				2C4BE81E2A5E09C10088864B /* StarWarsDirectoryUITestsLaunchTests.swift */,
 			);
 			path = StarWarsDirectoryUITests;
+			sourceTree = "<group>";
+		};
+		2CD735E02A60BF8900B2817C /* List */ = {
+			isa = PBXGroup;
+			children = (
+				2C21B4372A5E5DEA0057211D /* DirectoryViewModel.swift */,
+				2CADB3842A5F61A20077E41C /* DirectoryListView.swift */,
+				2CADB38A2A5F68D70077E41C /* IndividualCellView.swift */,
+			);
+			path = List;
+			sourceTree = "<group>";
+		};
+		2CD735E12A60BFC000B2817C /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				2C21B4312A5E58F40057211D /* Network.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		2CD735E22A60BFC900B2817C /* Service Layer */ = {
+			isa = PBXGroup;
+			children = (
+				2C21B4332A5E5A920057211D /* DirectoryService.swift */,
+			);
+			path = "Service Layer";
+			sourceTree = "<group>";
+		};
+		2CD735E32A60BFDB00B2817C /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				2CD735D62A5FD50800B2817C /* Logger+Extension.swift */,
+				2C21B4392A5E5F080057211D /* IndividualJSONDecoder.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		2CD735E42A60C0B200B2817C /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				2CD735E52A60C14A00B2817C /* LoadingView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		2CD735E72A61B45D00B2817C /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				2CADB38C2A5FA5D70077E41C /* IndividualDetailView.swift */,
+			);
+			path = Detail;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -321,9 +369,9 @@
 				2C21B4322A5E58F40057211D /* Network.swift in Sources */,
 				2C4BE8022A5E09BE0088864B /* ContentView.swift in Sources */,
 				2CADB38B2A5F68D70077E41C /* IndividualCellView.swift in Sources */,
-				2CADB3912A5FC0B60077E41C /* LoadingView.swift in Sources */,
 				2C21B42D2A5E523E0057211D /* IndividualDTO.swift in Sources */,
 				2CADB38D2A5FA5D70077E41C /* IndividualDetailView.swift in Sources */,
+				2CD735E62A60C14A00B2817C /* LoadingView.swift in Sources */,
 				2C21B4342A5E5A920057211D /* DirectoryService.swift in Sources */,
 				2C21B43C2A5F14FB0057211D /* Individual.swift in Sources */,
 				2CADB3852A5F61A20077E41C /* DirectoryListView.swift in Sources */,
