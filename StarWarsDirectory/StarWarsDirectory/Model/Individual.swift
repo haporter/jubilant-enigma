@@ -16,7 +16,7 @@ class Individual {
     let birthdate: Date
     let profilePicture: URL
     let forceSensitive: Bool
-    private let _affiliation: String
+    let _affiliation: String
     
     init(id: Int,
          firstName: String,

@@ -14,6 +14,7 @@ struct StarWarsDirectoryApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .modelContainer(for: Individual.self)
         }
     }
 }
